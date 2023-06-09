@@ -17,6 +17,14 @@ $text-decoration: none;
     src: url(./font/Roboto-Regular.ttf);
 }
 
+h1 {
+    margin-bottom: 0;
+}
+
+p {
+    margin-bottom: 0;
+}
+
 header {
     padding: 23px 50px 29px 60px;
     display: flex;
@@ -266,6 +274,194 @@ header {
 
 }
 
+main {
+    background: #CCCCCC;
+
+    .box {
+        padding: 40px 50px 4px;
+        .box_item {
+            padding: 15px 190px 60px;
+            background-image: url(./img/green.svg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+
+            .box_desc {
+                display: flex;
+                justify-content: space-between;
+                position: relative;
+
+                .text {
+                    width: 310px;
+
+                    h1 {
+                        font-family: 'Gotham Pro';
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 42px;
+                        line-height: 49px;
+                        color: #FFFFFF;
+                        padding-top: 35px;
+                    }
+
+                    img {
+                        padding-top: 25px;
+                    }
+
+                    .little_text {
+                        padding-top: 30px;
+                        display: flex;
+                        gap: 16px;
+                        align-items: center;
+
+                        p {
+                            font-family: 'Gotham Pro';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 16px;
+                            line-height: 24px;
+                            text-transform: uppercase;
+                            color: #222222;
+                        }
+
+                        img {
+                            padding: 0;
+                        }
+                    }
+                }
+
+                .text2 {
+                    display: flex;
+                    align-items: center;
+
+                    h1 {
+                        font-family: 'Gotham Pro';
+                        font-style: normal;
+                        font-weight: 300;
+                        font-size: 75px;
+                        line-height: 72px;
+                        text-align: right;
+                        color: #FFFFFF;
+                    }
+                }
+
+            }
+
+            .desc1 {
+                display: flex;
+                gap: 30px;
+                position: absolute;
+                top: 487px;
+                right: 40px;
+                .text {
+                    width: 460px;
+                    background: #FFFFFF;
+                    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.04), 0px 2px 6px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.04);
+                    padding: 32px 20px 16px;
+                    display: flex;
+                    gap: 9px;
+
+                    .nomer {
+                        h1 {
+                            font-family: 'Gotham Pro';
+                            font-style: normal;
+                            font-weight: 900;
+                            font-size: 36px;
+                            line-height: 36px;
+                            text-align: center;
+                            color: rgba(34, 34, 34, 0.2);
+                        }
+                    }
+
+                    .little_text {
+                        display: grid;
+
+                        h1 {
+                            font-family: 'Roboto1';
+                            font-style: normal;
+                            font-weight: 700;
+                            font-size: 24px;
+                            line-height: 24px;
+                            color: #222222;
+                        }
+
+                        p {
+                            font-family: 'Gotham Pro';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 14px;
+                            line-height: 20px;
+                            display: flex;
+                            align-items: center;
+                            padding-top: 8px;
+                            color: #222222;
+                        }
+
+                        span {
+                            font-family: 'Gotham Pro';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 24px;
+                            line-height: 40px;
+                            align-items: center;
+                            padding-top: 5px;
+                            color: #222222;
+
+                        }
+                        .btn1{
+                        button {
+                            cursor: pointer;
+                            padding: 10px 80px;
+                            border-radius: 4px;
+                            border: 2px solid #3CA255;
+                            font-family: 'Gotham Pro';
+                            font-style: normal;
+                            font-weight: 700;
+                            font-size: 16px;
+                            line-height: 23px;
+                            display: flex;
+                            align-items: center;
+                            text-align: center;
+                            color: #3CA255;
+                            gap: 5px;
+                            background: #FFFFFF;
+                        }                            
+                        }
+
+
+                        .btn {
+                            width: 100%;
+                        button{
+                          cursor: pointer;
+                            padding: 10px 80px 11px 80px;
+                            background: #FFFFFF;
+                            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.04), 0px 2px 6px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.04);
+                            border-radius: 0px;
+                            font-family: 'Gotham Pro';
+                            font-style: normal;
+                            font-weight: 700;
+                            font-size: 16px;
+                            line-height: 23px;
+                            display: flex;
+                            align-items: center;
+                            text-align: center;
+                            border: 2px solid #1C69D4;
+                            border-radius: 4px;
+                            color: #1C69D4;                            
+                        }
+                        }
+                    }
+                }
+
+            }
+
+
+        }
+    }
+}
+.box_img{
+    width: 100%;
+}
 
 
 
@@ -332,6 +528,14 @@ header {
 
 
     }
+    main{
+        .box{
+        .box_item{
+            padding: 15px 40px ;
+        }            
+        }
+
+    }
 }
 
 @media (max-width: 1280px) {
@@ -372,7 +576,7 @@ header {
 
 @media (max-width:1100px) {
     header {
-        padding: 23px 20px 49px 20px;
+        padding: 23px 20px 11px 20px;
 
         .img {
             display: flex;
@@ -407,6 +611,8 @@ header {
 
 @media (max-width: 681px) {
     header {
+        padding: 0;
+
         .img {
             display: none;
         }
@@ -421,55 +627,234 @@ header {
             }
 
             .box {
-                padding: 11px 20px 20px 20px;
-                display: flex;
-                .text1{
+                display: block;
+
+                .box_item {
+                    padding: 11px 20px 20px 20px;
                     display: flex;
-                    justify-content: space-between;
-                    width: 100%;
-                .text{
-                    display: flex;
-                p {
-                    padding-left: 8px;
-                }
 
-                select {
-                    border: none;
-                    overflow: hidden;
-                    padding-left: 18px;
-
-                    option {
-                        font-family: 'Roboto';
-                        font-style: normal;
-                        font-weight: 300;
-                        font-size: 14px;
-                        line-height: 20px;
-                        color: #222222;
-
-                    }
-                }                    
-                }
-
-                .profile {
-                    display: flex;
-                    gap: 21px;
-
-                    .user {
+                    .text1 {
                         display: flex;
-                        gap: 8px;
+                        justify-content: space-between;
+                        width: 100%;
 
-                        p {
+                        .text {
+                            display: flex;
+
+                            p {
+                                padding-left: 8px;
+                                font-family: 'Gotham Pro';
+                                font-style: normal;
+                                font-weight: 700;
+                                font-size: 16px;
+                                line-height: 23px;
+                                display: flex;
+                                align-items: center;
+                                color: #222222;
+                            }
+
+                            select {
+                                border: none;
+                                overflow: hidden;
+                                padding-left: 18px;
+
+                                option {
+                                    font-family: 'Roboto';
+                                    font-style: normal;
+                                    font-weight: 300;
+                                    font-size: 14px;
+                                    line-height: 20px;
+                                    color: #222222;
+
+                                }
+                            }
+                        }
+
+                        .profile {
+                            display: flex;
+                            gap: 21px;
+
+                            .user1 {
+                                display: none;
+                            }
+
+                            .user {
+                                display: flex;
+                                gap: 8px;
+
+                                p {
+                                    font-family: 'Gotham Pro';
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    font-size: 14px;
+                                    line-height: 20px;
+                                    color: #222222;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .box_desc {
+                    background: #F0F0F0;
+                    padding: 10px 20px;
+                    display: flex;
+                    gap: 15px;
+
+                    .btn {
+                        button {
+                            cursor: pointer;
+                            padding: 13px 43px 13px 44px;
+                            background: #1C69D4;
+                            border-radius: 4px;
+                            border: none;
+                            font-family: 'Gotham Pro';
+                            font-style: normal;
+                            font-weight: 700;
+                            font-size: 16px;
+                            line-height: 23px;
+                            display: flex;
+                            gap: 13px;
+                            align-items: center;
+                            color: #FFFFFF;
+                        }
+                    }
+
+                    .input {
+                        border: 1px solid #BBBBBB;
+                        border-radius: 4px;
+                        padding: 13px 0px 13px 17px;
+                        gap: 11px;
+                        display: flex;
+                        align-items: center;
+                        background: #FFFFFF;
+
+
+                        input {
+                            outline: none;
+                            background: #FFFFFF;
+                            border: none;
                             font-family: 'Gotham Pro';
                             font-style: normal;
                             font-weight: 400;
                             font-size: 14px;
                             line-height: 20px;
+                            color: #999999;
+                        }
+
+                    }
+
+                    p {
+                        display: flex;
+                        align-items: center;
+                        font-family: 'Gotham Pro';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 18px;
+                        line-height: 20px;
+                        color: #222222;
+                    }
+                }
+
+                .box_desc1 {
+                    display: none;
+                }
+
+            }
+        }
+    }
+}
+
+@media (max-width: 555px) {
+    header {
+        .father2 {
+            .box {
+                .box_item {
+                    .text1 {
+                        .text {
+                            select {
+                                display: none;
+                            }
+                        }
+
+                        .profile {
+                            .user1 {
+                                display: block;
+                            }
+
+                            .user {
+                                p {
+                                    display: none;
+                                }
+                            }
+
+                        }
+                    }
+                }
+
+                .box_desc {
+                    display: none;
+                }
+
+                .box_desc1 {
+                    background: #F0F0F0;
+                    padding: 12px 10px;
+                    gap: 15px;
+                    display: block;
+
+                    .city {
+                        display: flex;
+                        justify-content: space-between;
+                        width: 100%;
+
+                        .select2 {
+                            cursor: pointer;
+                            border: none;
+                            font-family: 'Gotham Pro';
+                            font-style: normal;
+                            font-weight: 300;
+                            font-size: 14px;
+                            line-height: 20px;
+                            color: #222222;
+                            background: #F0F0F0;
+                            ;
+                        }
+
+                        p {
+                            display: flex;
+                            align-items: center;
+                            font-family: 'Gotham Pro';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 18px;
+                            line-height: 20px;
                             color: #222222;
                         }
                     }
-                }                    
-                }
 
+                    .btn {
+                        padding-top: 12px;
+                        display: flex;
+                        justify-content: center;
+
+                        button {
+                            cursor: pointer;
+                            padding: 17px 99px 18px;
+                            background: #1C69D4;
+                            border-radius: 4px;
+                            border: none;
+                            font-family: 'Gotham Pro';
+                            font-style: normal;
+                            font-weight: 700;
+                            font-size: 16px;
+                            line-height: 23px;
+                            display: flex;
+                            gap: 13px;
+                            align-items: center;
+                            color: #FFFFFF;
+                        }
+                    }
+                }
             }
         }
     }
